@@ -36,7 +36,7 @@ O redis deve estar populado, logo a aplicação coletor deve estar rodando.
 virtualenv diretorio
 ```
 
-- 3. Entre no diretorio e copia a pasta do projeto;
+- Entre no diretorio e copia a pasta do projeto;
 - 4. Mude o source do bash para usar a versão do Python instalada no diretorio:
 ```ruby
 $ source bin/active
