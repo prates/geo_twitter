@@ -27,15 +27,15 @@ O redis deve estar populado, logo a aplicação coletor deve estar rodando.
 
 ##Procedimento de instalação:##
 
-- Crie um diretorio;
-- Utilize o virtualenv para criar um container python 2.7
+1. Crie um diretorio;
+2. Utilize o virtualenv para criar um container python 2.7
 
 ```ruby
 $ virtualenv diretorio
 ```
 
-- Entre no diretorio e copia a pasta do projeto;
-- Mude o source do bash para usar a versão do Python instalada no diretorio:
+3. Entre no diretorio e copia a pasta do projeto;
+4. Mude o source do bash para usar a versão do Python instalada no diretorio:
 ```ruby
 $ source bin/active
 ```
@@ -61,7 +61,7 @@ python manage.py runserver 0.0.0.0:8001
 - Abra o navegador na url: http://127.0.0.1:8001/teste/
 
 
-##Intruções de configuração##
+##Instruções de configuração##
 Para configurar o comportamernto da aplicação edite o arquivo app/CONFIG.py
 
 
