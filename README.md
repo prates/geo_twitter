@@ -11,13 +11,13 @@ heatmap. Esse projeto tem com dependencia o Redis, foi utilizado via docker, mas
 Exemplo de inicialização do Redis n máquina local:
 
 ```ruby
-redis-server
+$ redis-server
 ```
 
 Exemplo de uso de redis no docker
 
 ```ruby
-docker run --name redis -d -p 6379:6379 redis
+$ docker run --name redis -d -p 6379:6379 redis
 ```
 
 A implementação e testes foram feito utilizando Ubuntu linux.
@@ -42,12 +42,12 @@ $ source bin/active
 
 - Instale as dependencias do python, elas estão no arquivo requiment.txt do projeto. Para instala-las usei o pip:
 ```ruby
-$pip install -r requeriment.txt
+$ pip install -r requeriment.txt
 ```
 
 - Após instalar vá para a pasta geoTwitter/app/plot e execute o twistd para servir os arquivos estaticos:
 ```ruby
-twistd -n web -p 8000 --path .
+$ twistd -n web -p 8000 --path .
 ```
 
 
@@ -55,7 +55,7 @@ twistd -n web -p 8000 --path .
 - Volte para a pasta geoTwitter.
 - Execute o servidor do django:
 ```ruby
-python manage.py runserver 0.0.0.0:8001
+$ python manage.py runserver 0.0.0.0:8001
 ```
 
 - Abra o navegador na url: http://127.0.0.1:8001/teste/
