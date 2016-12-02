@@ -25,8 +25,7 @@ A implementação e testes foram feito utilizando Ubuntu linux.
 Observação
 O redis deve estar populado, logo a aplicação coletor deve estar rodando.
 
-
-Procediemnto de instalação:
+##Procedimento de instalação:
 
 1 - Crie um diretorio;
 2 - Utilize o virtualenv para criar um container python2.7
@@ -44,7 +43,7 @@ $ twistd -n web -p 8000 --path .
 $ python manage.py runserver 0.0.0.0:8001
 10 - abra o navegador na url: http://127.0.0.1:8001/teste/
 
-Intruções de configuração
+##Intruções de configuração
 Para configurar o comportamernto da aplicação edite o arquivo app/CONFIG.py
 
 
