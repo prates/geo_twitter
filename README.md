@@ -26,17 +26,13 @@ Observação
 O redis deve estar populado, logo a aplicação coletor deve estar rodando.
 
 ##Procedimento de instalação:
-
-
 ~~~
 
 - Crie um diretorio;
 - Utilize o virtualenv para criar um container python 2.7
-
 ```ruby
-virtualenv diretorio
+$ virtualenv diretorio
 ```
-
 
 - Entre no diretorio e copia a pasta do projeto;
 - Mude o source do bash para usar a versão do Python instalada no diretorio:
