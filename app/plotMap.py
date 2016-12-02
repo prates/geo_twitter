@@ -1,16 +1,19 @@
 
+import os
+import time
 import random
 import json
-import os
 import folium
 from folium import plugins
 from folium import MarkerCluster
 import redis
+import CONFIG
 
-class redisInterface():
+class RedisInterface():
 
-	def readRedis(self, busca):
-		conn = redis.StrictRedis(host='localhost', port=6379, db=0) #cria nova conexao com o redis
+	def read_redis(self, busca):
+		conf = CONFIG.REDIS
+		conn = redis.StrictRedis(host=conf['host'], port=conf['port'], db=conf['db']) #cria nova conexao com o redis
 		coord = []
 		chaves = conn.keys(busca)
 		for i in chaves:
@@ -25,27 +28,41 @@ class redisInterface():
 
 class plotMap():
 
-	def makeName(self, name):
+	def make_name(self, name):
+		'''
+		>>> p = plotMap()
+		>>> p.makeName('*se*')
+		'_se_.html' 
+		'''
 		return str(name.replace("/", "_").replace(".", "_").replace(",", "_").replace(" ", "_").replace("*", "_")+".html")
 	
+	def destino(self):
+		path_atual = os.path.dirname(os.path.realpath(__file__))
+		diretorio = os.path.join(path_atual, 'plot')
+		return diretorio
+	
+		
+	
 	def plot(self, consulta):
-		inicio = [-23.497084, -46.8854171]
-		red = redisInterface()
-		data = red.readRedis(consulta) 
+		inicio = CONFIG.COORDENADASMAPA
+		diretorio = self.destino()
+		nome_arquivo = self.make_name(consulta)
+		path_arquivo = os.path.join(diretorio, nome_arquivo)
+		red = RedisInterface()
+		data = red.read_redis(consulta) 
 		mapa = folium.Map(location=inicio, zoom_start=12)
 		cluster = MarkerCluster("cluster").add_to(mapa)		
 		for i in data:
 			folium.Marker(i).add_to(cluster)
 		mapa.add_children(plugins.HeatMap(data))
-		nome_arquivo = self.makeName(consulta)
-		path_arquivo = os.path.join('plot', nome_arquivo)
 		mapa.save(path_arquivo)
 		return nome_arquivo		
 
 
 
-p = plotMap()
-p.plot('*se*')
+if __name__ == "__main__":
+	import doctest
+	doctest.testmod()
 
 
 
