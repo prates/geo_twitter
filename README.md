@@ -9,11 +9,16 @@ Essa aplicação tem como função buscar os tweet armazemnados na base e plot u
 heatmap. Esse projeto tem com dependencia o Redis, foi utilizado via docker, mas você pode instala-lo na máquina local.
 
 Exemplo de inicialização do Redis n máquina local:
+
+```ruby
 $redis-server
+```
 
 Exemplo de uso de redis no docker
 
-# docker run --name redis -d -p 6379:6379 redis
+```ruby
+docker run --name redis -d -p 6379:6379 redis
+```
 
 A implementação e testes foram feito utilizando Ubuntu linux.
 
