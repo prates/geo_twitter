@@ -37,7 +37,7 @@ $ virtualenv diretorio
 - Entre no diretorio e copia a pasta do projeto;
 - Mude o source do bash para usar a versão do Python instalada no diretorio:
 ```ruby
-$ source bin/active
+$ source bin/activate
 ```
 
 - Instale as dependencias do python, elas estão no arquivo requiment.txt do projeto. Para instala-las usei o pip:
