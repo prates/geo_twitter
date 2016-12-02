@@ -11,7 +11,7 @@ heatmap. Esse projeto tem com dependencia o Redis, foi utilizado via docker, mas
 Exemplo de inicialização do Redis n máquina local:
 
 ```ruby
-$redis-server
+redis-server
 ```
 
 Exemplo de uso de redis no docker
