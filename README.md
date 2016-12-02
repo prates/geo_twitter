@@ -30,12 +30,8 @@ O redis deve estar populado, logo a aplicação coletor deve estar rodando.
 
 - Crie um diretorio;
 - Utilize o virtualenv para criar um container python 2.7
-
-```ruby
-docker run --name redis -d -p 6379:6379 redis
-```
-
-
+~~~
+~~~
 ```ruby
 $ virtualenv diretorio
 ```
