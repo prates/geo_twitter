@@ -1,0 +1,409 @@
+
+        <!DOCTYPE html>
+        <head>
+            
+        
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+        
+        
+        
+            
+            <style>
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                }
+
+            #map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+            
+        
+            
+            <style> #map_d6790af692f34b9bb2a6f64203e715fa {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+        
+            
+        
+            <script src="https://leaflet.github.io/Leaflet.heat/dist/leaflet-heat.js"></script>
+        
+        
+        
+        
+        </head>
+        <body>
+            
+        
+            
+            <div class="folium-map" id="map_d6790af692f34b9bb2a6f64203e715fa" ></div>
+        
+        
+        
+        </body>
+        <script>
+            
+        
+            
+
+            var southWest = L.latLng(-90, -180);
+            var northEast = L.latLng(90, 180);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var map_d6790af692f34b9bb2a6f64203e715fa = L.map('map_d6790af692f34b9bb2a6f64203e715fa', {
+                                           center:[-23.5505,-46.6333],
+                                           zoom: 12,
+                                           maxBounds: bounds,
+                                           layers: [],
+                                           crs: L.CRS.EPSG3857
+                                         });
+            
+        
+        
+            
+            var tile_layer_187361d80bcd4dceaa8924e5eb646396 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_d6790af692f34b9bb2a6f64203e715fa);
+
+        
+        
+            
+            var marker_cluster_61ade84000f74a6e896dea8b3323deb6 = L.markerClusterGroup();
+            map_d6790af692f34b9bb2a6f64203e715fa.addLayer(marker_cluster_61ade84000f74a6e896dea8b3323deb6);
+            
+        
+            
+
+            var marker_68be22411b83489d98342d5a8dd9dc0e = L.marker(
+                [-23.52477758,-46.66208243],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_61ade84000f74a6e896dea8b3323deb6);
+            
+        
+            
+            var popup_4df45689be234f3f9d407ef0e0b1b9cf = L.popup({maxWidth: '300'});
+
+            
+                var html_80318375e5364c2db88e751361ffc650 = $('         <div id="html_80318375e5364c2db88e751361ffc650"                 style="width: 100.0%; height: 100.0%;">                 No existem limites pra sonhar Linda histria hoje na gravao do programa domingoshow httpst.co6TPyrfLrBA</div>                 ')[0];
+                popup_4df45689be234f3f9d407ef0e0b1b9cf.setContent(html_80318375e5364c2db88e751361ffc650);
+            
+
+            marker_68be22411b83489d98342d5a8dd9dc0e.bindPopup(popup_4df45689be234f3f9d407ef0e0b1b9cf);
+
+            
+        
+        
+            
+
+            var marker_15166068cb73472ca104002f0c4c9c1f = L.marker(
+                [-23.6923421,-46.6695155],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_61ade84000f74a6e896dea8b3323deb6);
+            
+        
+            
+            var popup_9897d007e24b459bbefe66a07c1e2a00 = L.popup({maxWidth: '300'});
+
+            
+                var html_3a11bb85c4884e319f7e88ba86bf3ed0 = $('         <div id="html_3a11bb85c4884e319f7e88ba86bf3ed0"                 style="width: 100.0%; height: 100.0%;">                 Acho que domingo vou na igreja</div>                 ')[0];
+                popup_9897d007e24b459bbefe66a07c1e2a00.setContent(html_3a11bb85c4884e319f7e88ba86bf3ed0);
+            
+
+            marker_15166068cb73472ca104002f0c4c9c1f.bindPopup(popup_9897d007e24b459bbefe66a07c1e2a00);
+
+            
+        
+        
+            
+
+            var marker_55d55cc7b02b43ff8e10a8358349a737 = L.marker(
+                [-23.600125,-46.72015556],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_61ade84000f74a6e896dea8b3323deb6);
+            
+        
+            
+            var popup_7547d7384c9d4ec9a13db905922fa2a5 = L.popup({maxWidth: '300'});
+
+            
+                var html_6b151b9d856d47b0b7f617ac36651480 = $('         <div id="html_6b151b9d856d47b0b7f617ac36651480"                 style="width: 100.0%; height: 100.0%;">                 Da CCXP pro ensaio e soundcheck do kisserclan no Morumba  domingo tem nix com o Black httpst.coRILpLV3kfF</div>                 ')[0];
+                popup_7547d7384c9d4ec9a13db905922fa2a5.setContent(html_6b151b9d856d47b0b7f617ac36651480);
+            
+
+            marker_55d55cc7b02b43ff8e10a8358349a737.bindPopup(popup_7547d7384c9d4ec9a13db905922fa2a5);
+
+            
+        
+        
+            
+
+            var marker_307aa3fcd10848ac9a5549998bc47a8b = L.marker(
+                [-24.0041406,-46.420386],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_61ade84000f74a6e896dea8b3323deb6);
+            
+        
+            
+            var popup_552dc6bb5b754758abf0708c4759061d = L.popup({maxWidth: '300'});
+
+            
+                var html_0685ece99dc6409aa3727bda94baf859 = $('         <div id="html_0685ece99dc6409aa3727bda94baf859"                 style="width: 100.0%; height: 100.0%;">                 PartimosAgora s domingo a noite. soamulherada chacara httpst.coRvoKYYSUgW</div>                 ')[0];
+                popup_552dc6bb5b754758abf0708c4759061d.setContent(html_0685ece99dc6409aa3727bda94baf859);
+            
+
+            marker_307aa3fcd10848ac9a5549998bc47a8b.bindPopup(popup_552dc6bb5b754758abf0708c4759061d);
+
+            
+        
+        
+            
+
+            var marker_a4ff4a3607dd4429b4ee9ed50dc6961a = L.marker(
+                [-23.46238341,-46.65473983],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_61ade84000f74a6e896dea8b3323deb6);
+            
+        
+            
+            var popup_a6a8aeb5e5ef4ea586f04258309d941a = L.popup({maxWidth: '300'});
+
+            
+                var html_6525cb909fb744b8b2017289c7a7a350 = $('         <div id="html_6525cb909fb744b8b2017289c7a7a350"                 style="width: 100.0%; height: 100.0%;">                 Uma tarde de domingo no Playcenter com drispaca  playcenter  Playcenter So Paulo httpst.cod3xZaMG3y4</div>                 ')[0];
+                popup_a6a8aeb5e5ef4ea586f04258309d941a.setContent(html_6525cb909fb744b8b2017289c7a7a350);
+            
+
+            marker_a4ff4a3607dd4429b4ee9ed50dc6961a.bindPopup(popup_a6a8aeb5e5ef4ea586f04258309d941a);
+
+            
+        
+        
+            
+
+            var marker_f558a1b2e902422c9ed67d1806888913 = L.marker(
+                [-23.41301756,-46.03849006],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_61ade84000f74a6e896dea8b3323deb6);
+            
+        
+            
+            var popup_180c9610354c460dbedccff5dbcd4e62 = L.popup({maxWidth: '300'});
+
+            
+                var html_b1dc0446e6e0415bb5f724d56cf88079 = $('         <div id="html_b1dc0446e6e0415bb5f724d56cf88079"                 style="width: 100.0%; height: 100.0%;">                 Djeanytf Amanh eu no vou s no domingo.</div>                 ')[0];
+                popup_180c9610354c460dbedccff5dbcd4e62.setContent(html_b1dc0446e6e0415bb5f724d56cf88079);
+            
+
+            marker_f558a1b2e902422c9ed67d1806888913.bindPopup(popup_180c9610354c460dbedccff5dbcd4e62);
+
+            
+        
+        
+            
+
+            var marker_eb807d9ebb814ad0ba8c1262b68dec53 = L.marker(
+                [-23.55509784,-46.63407208],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_61ade84000f74a6e896dea8b3323deb6);
+            
+        
+            
+            var popup_d6b90e2a1fe94999ad9c31a5a99e99af = L.popup({maxWidth: '300'});
+
+            
+                var html_9ed0413bc3cd4aaebeb0b4eebd7e93d8 = $('         <div id="html_9ed0413bc3cd4aaebeb0b4eebd7e93d8"                 style="width: 100.0%; height: 100.0%;">                 Pessoal da 2 Fase OAB Trabalho neste domingo 412 farei o 1 Professor Ao Vivo com muitas httpst.cospxzcC5m08</div>                 ')[0];
+                popup_d6b90e2a1fe94999ad9c31a5a99e99af.setContent(html_9ed0413bc3cd4aaebeb0b4eebd7e93d8);
+            
+
+            marker_eb807d9ebb814ad0ba8c1262b68dec53.bindPopup(popup_d6b90e2a1fe94999ad9c31a5a99e99af);
+
+            
+        
+        
+            
+
+            var marker_b5b4d9aa02f540c3b40a84e1e9bbc1e1 = L.marker(
+                [-23.4990902,-46.3998417],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_61ade84000f74a6e896dea8b3323deb6);
+            
+        
+            
+            var popup_042cf9d3fa28492f924e7dc9c4b0d582 = L.popup({maxWidth: '300'});
+
+            
+                var html_4f342df6a99344d3a369a9b79fd47d2b = $('         <div id="html_4f342df6a99344d3a369a9b79fd47d2b"                 style="width: 100.0%; height: 100.0%;">                 AL AL GALERA.Domingo tem nosso domingoprime  no Buteco do Bil - ItaimO Samba comea as httpst.conIPQpgEaJR</div>                 ')[0];
+                popup_042cf9d3fa28492f924e7dc9c4b0d582.setContent(html_4f342df6a99344d3a369a9b79fd47d2b);
+            
+
+            marker_b5b4d9aa02f540c3b40a84e1e9bbc1e1.bindPopup(popup_042cf9d3fa28492f924e7dc9c4b0d582);
+
+            
+        
+        
+            
+
+            var marker_1726c6f8d2c34b14a1bd1049aae6779b = L.marker(
+                [-23.5264475,-46.56587717],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_61ade84000f74a6e896dea8b3323deb6);
+            
+        
+            
+            var popup_766014d315734a3fb3b214710842d4e5 = L.popup({maxWidth: '300'});
+
+            
+                var html_fc2a7460e15a4d16849dede74b7e6d4c = $('         <div id="html_fc2a7460e15a4d16849dede74b7e6d4c"                 style="width: 100.0%; height: 100.0%;">                 A cara do Henry de quem no quer tirar foto. dedomingo  Parque So Jorge - Corinthians httpst.cofyS7MHY79f</div>                 ')[0];
+                popup_766014d315734a3fb3b214710842d4e5.setContent(html_fc2a7460e15a4d16849dede74b7e6d4c);
+            
+
+            marker_1726c6f8d2c34b14a1bd1049aae6779b.bindPopup(popup_766014d315734a3fb3b214710842d4e5);
+
+            
+        
+        
+            
+            var heat_map_19bc3a3d496d46ca9dfbb1fd49835789 = L.heatLayer(
+                [['No existem limites pra sonhar Linda histria hoje na gravao do programa domingoshow httpst.co6TPyrfLrBA', [-23.52477758, -46.66208243]], ['Acho que domingo vou na igreja', [-23.6923421, -46.6695155]], ['Da CCXP pro ensaio e soundcheck do kisserclan no Morumba  domingo tem nix com o Black httpst.coRILpLV3kfF', [-23.600125, -46.72015556]], ['PartimosAgora s domingo a noite. soamulherada chacara httpst.coRvoKYYSUgW', [-24.0041406, -46.420386]], ['Uma tarde de domingo no Playcenter com drispaca  playcenter  Playcenter So Paulo httpst.cod3xZaMG3y4', [-23.46238341, -46.65473983]], ['Djeanytf Amanh eu no vou s no domingo.', [-23.41301756, -46.03849006]], ['Pessoal da 2 Fase OAB Trabalho neste domingo 412 farei o 1 Professor Ao Vivo com muitas httpst.cospxzcC5m08', [-23.55509784, -46.63407208]], ['AL AL GALERA.Domingo tem nosso domingoprime  no Buteco do Bil - ItaimO Samba comea as httpst.conIPQpgEaJR', [-23.4990902, -46.3998417]], ['A cara do Henry de quem no quer tirar foto. dedomingo  Parque So Jorge - Corinthians httpst.cofyS7MHY79f', [-23.5264475, -46.56587717]]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_d6790af692f34b9bb2a6f64203e715fa);
+        
+        
+        
+        </script>
+        

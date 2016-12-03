@@ -3,6 +3,9 @@ import os
 import time
 import random
 import json
+import re
+import unittest
+from mock import MagicMock
 import folium
 from folium import plugins
 from folium import MarkerCluster
@@ -10,16 +13,20 @@ import redis
 import CONFIG
 
 class RedisInterface():
+	
+	
+	
 
 	def read_redis(self, busca):
 		conf = CONFIG.REDIS
 		conn = redis.StrictRedis(host=conf['host'], port=conf['port'], db=conf['db']) #cria nova conexao com o redis
 		coord = []
 		chaves = conn.keys(busca)
+		PATERN = re.compile('[^a-zA-Z0-9-_*. ]+')
 		for i in chaves:
 			coord_unit = json.loads(conn.get(i))
 			coord_unit.reverse()
-			coord.append(coord_unit)
+			coord.append([PATERN.sub('', i) ,coord_unit])
 		return coord	
 
 
@@ -51,18 +58,44 @@ class plotMap():
 		red = RedisInterface()
 		data = red.read_redis(consulta) 
 		mapa = folium.Map(location=inicio, zoom_start=12)
-		cluster = MarkerCluster("cluster").add_to(mapa)		
+		cluster = MarkerCluster("cluster").add_to(mapa)	
+		coord = []	
 		for i in data:
-			folium.Marker(i).add_to(cluster)
-		mapa.add_children(plugins.HeatMap(data))
+			coord.append(i[1])
+			folium.Marker(i[1], popup=str(i[0])).add_to(cluster)
+		mapa.add_children(plugins.HeatMap(coord))
 		mapa.save(path_arquivo)
 		return nome_arquivo		
 
 
 
+
+
+
+class TestPlotMap(unittest.TestCase):
+	
+	def test_make_name(self):
+		p = plotMap()
+		nome = p.make_name(name="*se*")
+		self.assertEquals("_se_.html", nome)
+
+
+	def test_destino(self):
+		p = plotMap()
+		destino = p.destino()
+		self.assertTrue(os.path.exists(destino))
+
+		
+	def test_plot(self):
+		p = plotMap()
+		r = RedisInterface()
+		r.method = MagicMock(return_value=['teste', [1,2]])
+		nome_arquivo = p.plot(consulta="**")
+		path_arquivo = p.destino()
+		self.assertTrue(os.path.lexists(os.path.join(path_arquivo, nome_arquivo)))
+
 if __name__ == "__main__":
-	import doctest
-	doctest.testmod()
+	unittest.main()
 
 
 

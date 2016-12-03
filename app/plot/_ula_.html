@@ -1,0 +1,985 @@
+
+        <!DOCTYPE html>
+        <head>
+            
+        
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+        
+        
+        
+            
+            <style>
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                }
+
+            #map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+            
+        
+            
+            <style> #map_8d124f98fba34d9abdec536954fd8049 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+        
+            
+        
+            <script src="https://leaflet.github.io/Leaflet.heat/dist/leaflet-heat.js"></script>
+        
+        
+        
+        
+        </head>
+        <body>
+            
+        
+            
+            <div class="folium-map" id="map_8d124f98fba34d9abdec536954fd8049" ></div>
+        
+        
+        
+        </body>
+        <script>
+            
+        
+            
+
+            var southWest = L.latLng(-90, -180);
+            var northEast = L.latLng(90, 180);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var map_8d124f98fba34d9abdec536954fd8049 = L.map('map_8d124f98fba34d9abdec536954fd8049', {
+                                           center:[-23.5505,-46.6333],
+                                           zoom: 12,
+                                           maxBounds: bounds,
+                                           layers: [],
+                                           crs: L.CRS.EPSG3857
+                                         });
+            
+        
+        
+            
+            var tile_layer_7246d6566fdc45928ccf8c87261ab492 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_8d124f98fba34d9abdec536954fd8049);
+
+        
+        
+            
+            var marker_cluster_352e7c7a9e7c4f7e9244841860c395a7 = L.markerClusterGroup();
+            map_8d124f98fba34d9abdec536954fd8049.addLayer(marker_cluster_352e7c7a9e7c4f7e9244841860c395a7);
+            
+        
+            
+
+            var marker_bfaf8d98f3de48eab5c9a48a9880b896 = L.marker(
+                [-22.81403,-47.28999],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_352e7c7a9e7c4f7e9244841860c395a7);
+            
+        
+            
+            var popup_beb199f004f34cd2bedce977bfa703c2 = L.popup({maxWidth: '300'});
+
+            
+                var html_e9e80595445a4002b30895117b31e927 = $('         <div id="html_e9e80595445a4002b30895117b31e927"                 style="width: 100.0%; height: 100.0%;">                  Rec Bass de Hoje com meu brother rangel_rer ... No projeto Cantora Aline Paula  - httpst.coq5Vy0ujZv8</div>                 ')[0];
+                popup_beb199f004f34cd2bedce977bfa703c2.setContent(html_e9e80595445a4002b30895117b31e927);
+            
+
+            marker_bfaf8d98f3de48eab5c9a48a9880b896.bindPopup(popup_beb199f004f34cd2bedce977bfa703c2);
+
+            
+        
+        
+            
+
+            var marker_913bc02d8be84aebabdad42546fc4d4a = L.marker(
+                [-23.56028647,-46.65602678],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_352e7c7a9e7c4f7e9244841860c395a7);
+            
+        
+            
+            var popup_38d90426c71e4920803e26ccad5d265b = L.popup({maxWidth: '300'});
+
+            
+                var html_61f2ebb722594cb2b8d5ea1939e9bcda = $('         <div id="html_61f2ebb722594cb2b8d5ea1939e9bcda"                 style="width: 100.0%; height: 100.0%;">                 Tambm teve circuito de fortalecimento muscular... Viagem ativa..vittacenter sadetudo httpst.co0YF3qiR60y</div>                 ')[0];
+                popup_38d90426c71e4920803e26ccad5d265b.setContent(html_61f2ebb722594cb2b8d5ea1939e9bcda);
+            
+
+            marker_913bc02d8be84aebabdad42546fc4d4a.bindPopup(popup_38d90426c71e4920803e26ccad5d265b);
+
+            
+        
+        
+            
+
+            var marker_2676ac3afc98497e88de07772d9998dd = L.marker(
+                [-23.5479767,-46.90597612],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_352e7c7a9e7c4f7e9244841860c395a7);
+            
+        
+            
+            var popup_17101122087849679565715a2f1b42d6 = L.popup({maxWidth: '300'});
+
+            
+                var html_1cb3c5f4e40544ceac4c87800d9a672b = $('         <div id="html_1cb3c5f4e40544ceac4c87800d9a672b"                 style="width: 100.0%; height: 100.0%;">                 Rolezinho de amanh depois da celula. Prikota PriAlcantara souescolhido atesermosum httpst.covLj65SeplI</div>                 ')[0];
+                popup_17101122087849679565715a2f1b42d6.setContent(html_1cb3c5f4e40544ceac4c87800d9a672b);
+            
+
+            marker_2676ac3afc98497e88de07772d9998dd.bindPopup(popup_17101122087849679565715a2f1b42d6);
+
+            
+        
+        
+            
+
+            var marker_3a32dfda0c4044a89735e6c04ba4fb2e = L.marker(
+                [-23.98534989,-46.29875373],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_352e7c7a9e7c4f7e9244841860c395a7);
+            
+        
+            
+            var popup_b3b4dd31e3a647cc8da6ad35a1be0856 = L.popup({maxWidth: '300'});
+
+            
+                var html_51859750cc4c4dd9a60f98b8f1afe226 = $('         <div id="html_51859750cc4c4dd9a60f98b8f1afe226"                 style="width: 100.0%; height: 100.0%;">                 ltimo dia da alta cpula atltica Esamc... Vai deixar saudades atleticaesamc esamcsantos httpst.coBuPqN4YYoX</div>                 ')[0];
+                popup_b3b4dd31e3a647cc8da6ad35a1be0856.setContent(html_51859750cc4c4dd9a60f98b8f1afe226);
+            
+
+            marker_3a32dfda0c4044a89735e6c04ba4fb2e.bindPopup(popup_b3b4dd31e3a647cc8da6ad35a1be0856);
+
+            
+        
+        
+            
+
+            var marker_c714297dbbfb48ef855e5c2741b1af36 = L.marker(
+                [-22.77961646,-47.34928406],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_352e7c7a9e7c4f7e9244841860c395a7);
+            
+        
+            
+            var popup_b79b6baa29634a24bc85bb3dbb601ac2 = L.popup({maxWidth: '300'});
+
+            
+                var html_318e429d180f479ca98fb5e63b92c549 = $('         <div id="html_318e429d180f479ca98fb5e63b92c549"                 style="width: 100.0%; height: 100.0%;">                 Clula Aliana_Americana SP  Parque Novo Mundo httpst.cofppskyXEi3</div>                 ')[0];
+                popup_b79b6baa29634a24bc85bb3dbb601ac2.setContent(html_318e429d180f479ca98fb5e63b92c549);
+            
+
+            marker_c714297dbbfb48ef855e5c2741b1af36.bindPopup(popup_b79b6baa29634a24bc85bb3dbb601ac2);
+
+            
+        
+        
+            
+
+            var marker_b9250143ff034058b277e40ee7c17301 = L.marker(
+                [-23.59222222,-46.66555556],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_352e7c7a9e7c4f7e9244841860c395a7);
+            
+        
+            
+            var popup_4b12770544e446b092276e444c6b5393 = L.popup({maxWidth: '300'});
+
+            
+                var html_75be629f11994e03a567e4dcfbdfb340 = $('         <div id="html_75be629f11994e03a567e4dcfbdfb340"                 style="width: 100.0%; height: 100.0%;">                 Natal chegandovendadenatal ateliemaluserra cursodeceramica ateliedeceramica auladeceramica httpst.coSyAS1pNSt5</div>                 ')[0];
+                popup_4b12770544e446b092276e444c6b5393.setContent(html_75be629f11994e03a567e4dcfbdfb340);
+            
+
+            marker_b9250143ff034058b277e40ee7c17301.bindPopup(popup_4b12770544e446b092276e444c6b5393);
+
+            
+        
+        
+            
+
+            var marker_d30d621d38a044c8ba4c41798e8d0815 = L.marker(
+                [-23.59581722,-46.68425919],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_352e7c7a9e7c4f7e9244841860c395a7);
+            
+        
+            
+            var popup_9f4fa9101d49467199a1fb65f6dc26bf = L.popup({maxWidth: '300'});
+
+            
+                var html_5139a8b17cbe469e9259598f66f08235 = $('         <div id="html_5139a8b17cbe469e9259598f66f08235"                 style="width: 100.0%; height: 100.0%;">                 Segunda etapa do simulado pro DopeyChallenge concluda com sucesso. Seguindo as orientaes do httpst.co8zRzFlSapq</div>                 ')[0];
+                popup_9f4fa9101d49467199a1fb65f6dc26bf.setContent(html_5139a8b17cbe469e9259598f66f08235);
+            
+
+            marker_d30d621d38a044c8ba4c41798e8d0815.bindPopup(popup_9f4fa9101d49467199a1fb65f6dc26bf);
+
+            
+        
+        
+            
+
+            var marker_215befdcdb1a41f292cb276bb6f7cf61 = L.marker(
+                [-23.5310099,-46.5388499],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_352e7c7a9e7c4f7e9244841860c395a7);
+            
+        
+            
+            var popup_5277a0369f4b425b82a87117c9b48b32 = L.popup({maxWidth: '300'});
+
+            
+                var html_fbea5e88090040ae8880fd4087ee4203 = $('         <div id="html_fbea5e88090040ae8880fd4087ee4203"                 style="width: 100.0%; height: 100.0%;">                 T de Alicia En era una vez...Yo soy la Mulan   Etec Prof. Aprgio Gonzaga httpst.coLyMqLJpk0r</div>                 ')[0];
+                popup_5277a0369f4b425b82a87117c9b48b32.setContent(html_fbea5e88090040ae8880fd4087ee4203);
+            
+
+            marker_215befdcdb1a41f292cb276bb6f7cf61.bindPopup(popup_5277a0369f4b425b82a87117c9b48b32);
+
+            
+        
+        
+            
+
+            var marker_a5b74207ce814a9abfbefa1b20e045b3 = L.marker(
+                [-23.62163095,-46.69958383],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_352e7c7a9e7c4f7e9244841860c395a7);
+            
+        
+            
+            var popup_c059d1234f6847c29458bca04d220a45 = L.popup({maxWidth: '300'});
+
+            
+                var html_00c78525b26c4337b5fb38f694bfe598 = $('         <div id="html_00c78525b26c4337b5fb38f694bfe598"                 style="width: 100.0%; height: 100.0%;">                 Agora fao parte da populao que sempre escuta Nossa deixa eu ver seu culos Nossa seu grau  httpst.co0AMUbrApMu</div>                 ')[0];
+                popup_c059d1234f6847c29458bca04d220a45.setContent(html_00c78525b26c4337b5fb38f694bfe598);
+            
+
+            marker_a5b74207ce814a9abfbefa1b20e045b3.bindPopup(popup_c059d1234f6847c29458bca04d220a45);
+
+            
+        
+        
+            
+
+            var marker_d85a9dfbc8434aa5b232b1b7266ec1d4 = L.marker(
+                [-23.56876606,-46.59267205],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_352e7c7a9e7c4f7e9244841860c395a7);
+            
+        
+            
+            var popup_18d06e68ddcd490588df486860d0bf84 = L.popup({maxWidth: '300'});
+
+            
+                var html_0e3695c75dc04971bf0661bdd84e1274 = $('         <div id="html_0e3695c75dc04971bf0661bdd84e1274"                 style="width: 100.0%; height: 100.0%;">                 Im at Titular_Bar in So Paulo SP w tanbarbato kassy_sp httpst.coNp6mGmvanL</div>                 ')[0];
+                popup_18d06e68ddcd490588df486860d0bf84.setContent(html_0e3695c75dc04971bf0661bdd84e1274);
+            
+
+            marker_d85a9dfbc8434aa5b232b1b7266ec1d4.bindPopup(popup_18d06e68ddcd490588df486860d0bf84);
+
+            
+        
+        
+            
+
+            var marker_1129787b80a94938a213d8ee43a1183e = L.marker(
+                [-23.58757,-46.64163],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_352e7c7a9e7c4f7e9244841860c395a7);
+            
+        
+            
+            var popup_cec79df7b989452497ae63d48a671e0a = L.popup({maxWidth: '300'});
+
+            
+                var html_791de9aa98314a1dba86873a67517aeb = $('         <div id="html_791de9aa98314a1dba86873a67517aeb"                 style="width: 100.0%; height: 100.0%;">                 Microagulhamento Fotobiomodulado Vamos que anoite est cheia micropunturismo micro led httpst.coMOBcEMfQMD</div>                 ')[0];
+                popup_cec79df7b989452497ae63d48a671e0a.setContent(html_791de9aa98314a1dba86873a67517aeb);
+            
+
+            marker_1129787b80a94938a213d8ee43a1183e.bindPopup(popup_cec79df7b989452497ae63d48a671e0a);
+
+            
+        
+        
+            
+
+            var marker_9c75ce61bdd44ad1afb75a6409b33dca = L.marker(
+                [-23.60391541,-46.65952265],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_352e7c7a9e7c4f7e9244841860c395a7);
+            
+        
+            
+            var popup_6876fdd7ecc24aa08dbdfd606044e31d = L.popup({maxWidth: '300'});
+
+            
+                var html_ac548da3887f418ba26ab911541bc39f = $('         <div id="html_ac548da3887f418ba26ab911541bc39f"                 style="width: 100.0%; height: 100.0%;">                 HH   Consulado de Moema in So Paulo SP httpst.coDkff55lMDs</div>                 ')[0];
+                popup_6876fdd7ecc24aa08dbdfd606044e31d.setContent(html_ac548da3887f418ba26ab911541bc39f);
+            
+
+            marker_9c75ce61bdd44ad1afb75a6409b33dca.bindPopup(popup_6876fdd7ecc24aa08dbdfd606044e31d);
+
+            
+        
+        
+            
+
+            var marker_1f942bbcfe644b059eea29211b0233cf = L.marker(
+                [-24.0183658,-46.47049069],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_352e7c7a9e7c4f7e9244841860c395a7);
+            
+        
+            
+            var popup_fdedeb01c39a4665b984ef5bb6831a32 = L.popup({maxWidth: '300'});
+
+            
+                var html_409ce4ae27fa40b3beb8b3c1409148dc = $('         <div id="html_409ce4ae27fa40b3beb8b3c1409148dc"                 style="width: 100.0%; height: 100.0%;">                 Mulher tenta suicidio ao pular do porto. Fotos na paginas httpst.co0D6JfoH89s zero13 httpst.coTIcBkgTHfR</div>                 ')[0];
+                popup_fdedeb01c39a4665b984ef5bb6831a32.setContent(html_409ce4ae27fa40b3beb8b3c1409148dc);
+            
+
+            marker_1f942bbcfe644b059eea29211b0233cf.bindPopup(popup_fdedeb01c39a4665b984ef5bb6831a32);
+
+            
+        
+        
+            
+
+            var marker_dc05e286d09349739191f0f0ef8dd909 = L.marker(
+                [-24.0978544,-46.62639879],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_352e7c7a9e7c4f7e9244841860c395a7);
+            
+        
+            
+            var popup_b72a80bdd06e4080b95dd989148fa7e1 = L.popup({maxWidth: '300'});
+
+            
+                var html_3d618fb5325b422dab187bc7c1a96716 = $('         <div id="html_3d618fb5325b422dab187bc7c1a96716"                 style="width: 100.0%; height: 100.0%;">                 Just posted a photo  Bidulas Restaurante httpst.coDzknCYbtva</div>                 ')[0];
+                popup_b72a80bdd06e4080b95dd989148fa7e1.setContent(html_3d618fb5325b422dab187bc7c1a96716);
+            
+
+            marker_dc05e286d09349739191f0f0ef8dd909.bindPopup(popup_b72a80bdd06e4080b95dd989148fa7e1);
+
+            
+        
+        
+            
+
+            var marker_a7f4d1508ded4e5da9277c709b3ceab3 = L.marker(
+                [-22.9858592,-46.9931433],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_352e7c7a9e7c4f7e9244841860c395a7);
+            
+        
+            
+            var popup_3435025ee5c1433aa8f279d4659e2628 = L.popup({maxWidth: '300'});
+
+            
+                var html_ede292a9b46d4defaf8ca2de8593da4d = $('         <div id="html_ede292a9b46d4defaf8ca2de8593da4d"                 style="width: 100.0%; height: 100.0%;">                 Quase morri hj dps da aula e agr to com dor d cabea com sono e com dor d estomago afee</div>                 ')[0];
+                popup_3435025ee5c1433aa8f279d4659e2628.setContent(html_ede292a9b46d4defaf8ca2de8593da4d);
+            
+
+            marker_a7f4d1508ded4e5da9277c709b3ceab3.bindPopup(popup_3435025ee5c1433aa8f279d4659e2628);
+
+            
+        
+        
+            
+
+            var marker_a7663e2a39d34ea9b11863797ef9e473 = L.marker(
+                [-23.27161,-45.89497],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_352e7c7a9e7c4f7e9244841860c395a7);
+            
+        
+            
+            var popup_f57cb46b51de4cd9846fd463cba7e1b0 = L.popup({maxWidth: '300'});
+
+            
+                var html_d6e4ba85ab8a4d03b6692055d02ef938 = $('         <div id="html_d6e4ba85ab8a4d03b6692055d02ef938"                 style="width: 100.0%; height: 100.0%;">                 Circular Barbell joia em ao cirrgico Dourada Septo...316LseptumpiercingMais um da httpst.coQpbqBVW87J</div>                 ')[0];
+                popup_f57cb46b51de4cd9846fd463cba7e1b0.setContent(html_d6e4ba85ab8a4d03b6692055d02ef938);
+            
+
+            marker_a7663e2a39d34ea9b11863797ef9e473.bindPopup(popup_f57cb46b51de4cd9846fd463cba7e1b0);
+
+            
+        
+        
+            
+
+            var marker_555c641f20434894ad60e849a5759fdf = L.marker(
+                [-23.70389583,-46.69176448],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_352e7c7a9e7c4f7e9244841860c395a7);
+            
+        
+            
+            var popup_0ccd4b3bd4bd49a5917c4bcb880c22ab = L.popup({maxWidth: '300'});
+
+            
+                var html_aa21630a25f0477daa49f173ed5bb94c = $('         <div id="html_aa21630a25f0477daa49f173ed5bb94c"                 style="width: 100.0%; height: 100.0%;">                 Im at AME Interlagos - Ambulatrio Mdico de Especialidades in So Paulo httpst.coLku9tEPNDj</div>                 ')[0];
+                popup_0ccd4b3bd4bd49a5917c4bcb880c22ab.setContent(html_aa21630a25f0477daa49f173ed5bb94c);
+            
+
+            marker_555c641f20434894ad60e849a5759fdf.bindPopup(popup_0ccd4b3bd4bd49a5917c4bcb880c22ab);
+
+            
+        
+        
+            
+
+            var marker_0975e540013b4bcc9279c5b1f23dc1a4 = L.marker(
+                [-23.941101,-46.304807],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_352e7c7a9e7c4f7e9244841860c395a7);
+            
+        
+            
+            var popup_b5bea76b80b4466baba482c9a41cdb0f = L.popup({maxWidth: '300'});
+
+            
+                var html_286494edc04d4f1199a037796cf24043 = $('         <div id="html_286494edc04d4f1199a037796cf24043"                 style="width: 100.0%; height: 100.0%;">                 vestido longo sexycookiefashion paulafernandes7 natal festa instafashion look fenda  httpst.coz1sJsBOnQA</div>                 ')[0];
+                popup_b5bea76b80b4466baba482c9a41cdb0f.setContent(html_286494edc04d4f1199a037796cf24043);
+            
+
+            marker_0975e540013b4bcc9279c5b1f23dc1a4.bindPopup(popup_b5bea76b80b4466baba482c9a41cdb0f);
+
+            
+        
+        
+            
+
+            var marker_b83afb3ed9e84a4a9031089eed523b1a = L.marker(
+                [-23.96346998,-46.39195919],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_352e7c7a9e7c4f7e9244841860c395a7);
+            
+        
+            
+            var popup_b136f2d2daf94d7b9585404ed81e29fc = L.popup({maxWidth: '300'});
+
+            
+                var html_b88db14b588646afb68e725796ed288f = $('         <div id="html_b88db14b588646afb68e725796ed288f"                 style="width: 100.0%; height: 100.0%;">                 Primeiro dia de aula da ltima matria da ps graduao   UNIBR - Faculdade de So Vicente in So Vicente SP httpst.co7un3UP232l</div>                 ')[0];
+                popup_b136f2d2daf94d7b9585404ed81e29fc.setContent(html_b88db14b588646afb68e725796ed288f);
+            
+
+            marker_b83afb3ed9e84a4a9031089eed523b1a.bindPopup(popup_b136f2d2daf94d7b9585404ed81e29fc);
+
+            
+        
+        
+            
+
+            var marker_c35197153fe041d4b43000da8206a436 = L.marker(
+                [-23.1840992,-45.8490982],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_352e7c7a9e7c4f7e9244841860c395a7);
+            
+        
+            
+            var popup_4ea57a792d294dd9873db9c3073de013 = L.popup({maxWidth: '300'});
+
+            
+                var html_de094362c17845148c53354aef38d670 = $('         <div id="html_de094362c17845148c53354aef38d670"                 style="width: 100.0%; height: 100.0%;">                 rvore de clula FestaDaColheita2016  Igreja da Cidade em So Jos dos Campos httpst.co47cEN6u6Tb</div>                 ')[0];
+                popup_4ea57a792d294dd9873db9c3073de013.setContent(html_de094362c17845148c53354aef38d670);
+            
+
+            marker_c35197153fe041d4b43000da8206a436.bindPopup(popup_4ea57a792d294dd9873db9c3073de013);
+
+            
+        
+        
+            
+
+            var marker_4a6af50db4d34ad6a0b07eec86cd40c3 = L.marker(
+                [-23.56876606,-46.59267205],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_352e7c7a9e7c4f7e9244841860c395a7);
+            
+        
+            
+            var popup_e4e0f88978ed42d1ae4bc77182ce6f44 = L.popup({maxWidth: '300'});
+
+            
+                var html_1f6dd290e79248f5932cf29876b3c51e = $('         <div id="html_1f6dd290e79248f5932cf29876b3c51e"                 style="width: 100.0%; height: 100.0%;">                 Im at Titular_Bar in So Paulo SP httpst.coNgrDZfotcG</div>                 ')[0];
+                popup_e4e0f88978ed42d1ae4bc77182ce6f44.setContent(html_1f6dd290e79248f5932cf29876b3c51e);
+            
+
+            marker_4a6af50db4d34ad6a0b07eec86cd40c3.bindPopup(popup_e4e0f88978ed42d1ae4bc77182ce6f44);
+
+            
+        
+        
+            
+
+            var marker_95b1b3dad6394537b7f5f3b35adc03a9 = L.marker(
+                [-23.56876606,-46.59267205],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_352e7c7a9e7c4f7e9244841860c395a7);
+            
+        
+            
+            var popup_71274c5a7b8a4b2482c4f0c22ef32ff1 = L.popup({maxWidth: '300'});
+
+            
+                var html_a455b47a71324dedbc2fab6620821914 = $('         <div id="html_a455b47a71324dedbc2fab6620821914"                 style="width: 100.0%; height: 100.0%;">                 Aberta a temporada para entrega de presentes at Titular_Bar in So Paulo SP w tanbarbato httpst.coKhqn8wX6gS</div>                 ')[0];
+                popup_71274c5a7b8a4b2482c4f0c22ef32ff1.setContent(html_a455b47a71324dedbc2fab6620821914);
+            
+
+            marker_95b1b3dad6394537b7f5f3b35adc03a9.bindPopup(popup_71274c5a7b8a4b2482c4f0c22ef32ff1);
+
+            
+        
+        
+            
+
+            var marker_a08e914a10e84c8fab9db1caaba02106 = L.marker(
+                [-23.4946312,-46.6113899],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_352e7c7a9e7c4f7e9244841860c395a7);
+            
+        
+            
+            var popup_a7b625db4df145d1b8e1b1ef3b8bbda5 = L.popup({maxWidth: '300'});
+
+            
+                var html_fb1142b931574d76a1336b65e5731145 = $('         <div id="html_fb1142b931574d76a1336b65e5731145"                 style="width: 100.0%; height: 100.0%;">                 Ela  Sambinha nossoalegria xotristeza forachape   Consulado dos Amigos httpst.coButz5RnoAx</div>                 ')[0];
+                popup_a7b625db4df145d1b8e1b1ef3b8bbda5.setContent(html_fb1142b931574d76a1336b65e5731145);
+            
+
+            marker_a08e914a10e84c8fab9db1caaba02106.bindPopup(popup_a7b625db4df145d1b8e1b1ef3b8bbda5);
+
+            
+        
+        
+            
+
+            var marker_c9ef36a15bd74278981e7a92718c03ef = L.marker(
+                [-23.4583681,-46.61251442],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_352e7c7a9e7c4f7e9244841860c395a7);
+            
+        
+            
+            var popup_c57b50b88c4d4ab7937186574bf31899 = L.popup({maxWidth: '300'});
+
+            
+                var html_0d1949b52c9b482c885010f8f055a7f3 = $('         <div id="html_0d1949b52c9b482c885010f8f055a7f3"                 style="width: 100.0%; height: 100.0%;">                 boladenevecantareira celulaoboladeneve  Zona Norte - So Paulo httpst.coNVwWgzqTUh</div>                 ')[0];
+                popup_c57b50b88c4d4ab7937186574bf31899.setContent(html_0d1949b52c9b482c885010f8f055a7f3);
+            
+
+            marker_c9ef36a15bd74278981e7a92718c03ef.bindPopup(popup_c57b50b88c4d4ab7937186574bf31899);
+
+            
+        
+        
+            
+
+            var marker_8e841af88fba4b9a96670b853ab4bda0 = L.marker(
+                [-23.58228394,-46.60990906],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_352e7c7a9e7c4f7e9244841860c395a7);
+            
+        
+            
+            var popup_6166046790ed4d25a994b0cf9d6cedb0 = L.popup({maxWidth: '300'});
+
+            
+                var html_c84aa549eda64b0392affca4706d3e9a = $('         <div id="html_c84aa549eda64b0392affca4706d3e9a"                 style="width: 100.0%; height: 100.0%;">                 ... Mas  que loucuras so particularidades intimidades grandes demais para serem dividas httpst.coorvJt63zyZ</div>                 ')[0];
+                popup_6166046790ed4d25a994b0cf9d6cedb0.setContent(html_c84aa549eda64b0392affca4706d3e9a);
+            
+
+            marker_8e841af88fba4b9a96670b853ab4bda0.bindPopup(popup_6166046790ed4d25a994b0cf9d6cedb0);
+
+            
+        
+        
+            
+
+            var marker_838be62a93d648b3ba47e98ba6c03006 = L.marker(
+                [-22.71349515,-47.64762518],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_352e7c7a9e7c4f7e9244841860c395a7);
+            
+        
+            
+            var popup_b365a040fdaf49b6a4059f438420739b = L.popup({maxWidth: '300'});
+
+            
+                var html_352c4a46f68845b7a6c119e6f161db4b = $('         <div id="html_352c4a46f68845b7a6c119e6f161db4b"                 style="width: 100.0%; height: 100.0%;">                 Quem disse q eu  ia treinar Fechei a academia musculao tudodebom academia fitmom httpst.co72C2jIzEUp</div>                 ')[0];
+                popup_b365a040fdaf49b6a4059f438420739b.setContent(html_352c4a46f68845b7a6c119e6f161db4b);
+            
+
+            marker_838be62a93d648b3ba47e98ba6c03006.bindPopup(popup_b365a040fdaf49b6a4059f438420739b);
+
+            
+        
+        
+            
+
+            var marker_d331281ca2ef4ddeab74cdd30286c6fd = L.marker(
+                [-23.55100345,-46.20656911],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_352e7c7a9e7c4f7e9244841860c395a7);
+            
+        
+            
+            var popup_85a4b35d75cc4e739b0fe41175fb340d = L.popup({maxWidth: '300'});
+
+            
+                var html_c2c29cc2d2ad458e8326463e7f1b2355 = $('         <div id="html_c2c29cc2d2ad458e8326463e7f1b2355"                 style="width: 100.0%; height: 100.0%;">                 Aula extra de Power Jump PowerJump SangueLaranja  Academia Evoluo in Mogi das Cruzes SP httpst.cozqzef59kri</div>                 ')[0];
+                popup_85a4b35d75cc4e739b0fe41175fb340d.setContent(html_c2c29cc2d2ad458e8326463e7f1b2355);
+            
+
+            marker_d331281ca2ef4ddeab74cdd30286c6fd.bindPopup(popup_85a4b35d75cc4e739b0fe41175fb340d);
+
+            
+        
+        
+            
+
+            var marker_6e00bfc7e77b497c8a37dfa434b7d8c5 = L.marker(
+                [-23.55,-46.6333],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_352e7c7a9e7c4f7e9244841860c395a7);
+            
+        
+            
+            var popup_731f78cf3b384e2a80b28a0bf590c6ed = L.popup({maxWidth: '300'});
+
+            
+                var html_9297d2fbe2fa47edbe59c73f74a4fc73 = $('         <div id="html_9297d2fbe2fa47edbe59c73f74a4fc73"                 style="width: 100.0%; height: 100.0%;">                 Aula dessa semana... vdeo em breve  JazzFunk MDCB  So Paulo Brazil httpst.coyLY8mI1DVK</div>                 ')[0];
+                popup_731f78cf3b384e2a80b28a0bf590c6ed.setContent(html_9297d2fbe2fa47edbe59c73f74a4fc73);
+            
+
+            marker_6e00bfc7e77b497c8a37dfa434b7d8c5.bindPopup(popup_731f78cf3b384e2a80b28a0bf590c6ed);
+
+            
+        
+        
+            
+
+            var marker_510c3e59e3344c778eab998b9950288a = L.marker(
+                [-23.58678823,-46.67939723],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_352e7c7a9e7c4f7e9244841860c395a7);
+            
+        
+            
+            var popup_a761c9d6cc9f49a9b6b09771b7036c50 = L.popup({maxWidth: '300'});
+
+            
+                var html_8214291baba147298d03873eee433608 = $('         <div id="html_8214291baba147298d03873eee433608"                 style="width: 100.0%; height: 100.0%;">                 vemmonstro paimonstro  saidajaulamonstro at SmartFitOficial in So Paulo SP httpst.coX5qyvfTgo0</div>                 ')[0];
+                popup_a761c9d6cc9f49a9b6b09771b7036c50.setContent(html_8214291baba147298d03873eee433608);
+            
+
+            marker_510c3e59e3344c778eab998b9950288a.bindPopup(popup_a761c9d6cc9f49a9b6b09771b7036c50);
+
+            
+        
+        
+            
+
+            var marker_19ff56d5013b4d769fb4d8d787e433d0 = L.marker(
+                [-23.472365,-46.607391],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_352e7c7a9e7c4f7e9244841860c395a7);
+            
+        
+            
+            var popup_c76a1594f5f14682a6de5474dfd0bbba = L.popup({maxWidth: '300'});
+
+            
+                var html_994b493953164658ab8baeaa6bea1e13 = $('         <div id="html_994b493953164658ab8baeaa6bea1e13"                 style="width: 100.0%; height: 100.0%;">                 Bora puxar ferro  bestshape musculao carolmaromba ferro  httpst.co30O3ulJ6Xl</div>                 ')[0];
+                popup_c76a1594f5f14682a6de5474dfd0bbba.setContent(html_994b493953164658ab8baeaa6bea1e13);
+            
+
+            marker_19ff56d5013b4d769fb4d8d787e433d0.bindPopup(popup_c76a1594f5f14682a6de5474dfd0bbba);
+
+            
+        
+        
+            
+
+            var marker_a939ae49dfee4f90b1aa557bfc46a511 = L.marker(
+                [-23.55509784,-46.63407208],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_352e7c7a9e7c4f7e9244841860c395a7);
+            
+        
+            
+            var popup_f088d84c195e49649e3adc620acc6e5d = L.popup({maxWidth: '300'});
+
+            
+                var html_b71d696b8abc40de97329fa0111bda61 = $('         <div id="html_b71d696b8abc40de97329fa0111bda61"                 style="width: 100.0%; height: 100.0%;">                 Tudo pronto para a aula de 2 fase de Empresarial  Bem-vindos   Damsio Educacional httpst.cokJC8nDQ1rG</div>                 ')[0];
+                popup_f088d84c195e49649e3adc620acc6e5d.setContent(html_b71d696b8abc40de97329fa0111bda61);
+            
+
+            marker_a939ae49dfee4f90b1aa557bfc46a511.bindPopup(popup_f088d84c195e49649e3adc620acc6e5d);
+
+            
+        
+        
+            
+
+            var marker_72653ac5f24944f08fdc1f095765b985 = L.marker(
+                [-23.40487175,-46.74533454],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_352e7c7a9e7c4f7e9244841860c395a7);
+            
+        
+            
+            var popup_d8155672a8414d7ea183e2a6d8c132ee = L.popup({maxWidth: '300'});
+
+            
+                var html_3b2584f4c931410fa7bd01f97ebd9902 = $('         <div id="html_3b2584f4c931410fa7bd01f97ebd9902"                 style="width: 100.0%; height: 100.0%;">                 Se anteceda a curva...  Academia Muscular Fit in So Paulo SP httpst.coKicflySgTX</div>                 ')[0];
+                popup_d8155672a8414d7ea183e2a6d8c132ee.setContent(html_3b2584f4c931410fa7bd01f97ebd9902);
+            
+
+            marker_72653ac5f24944f08fdc1f095765b985.bindPopup(popup_d8155672a8414d7ea183e2a6d8c132ee);
+
+            
+        
+        
+            
+
+            var marker_2a131a2901e645e0ada7223777879d9d = L.marker(
+                [-23.9572442,-46.3783863],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_352e7c7a9e7c4f7e9244841860c395a7);
+            
+        
+            
+            var popup_8861c30c5e0943958767cd7c0375bb76 = L.popup({maxWidth: '300'});
+
+            
+                var html_f02481df5528446eaa325de707654cbd = $('         <div id="html_f02481df5528446eaa325de707654cbd"                 style="width: 100.0%; height: 100.0%;">                 Video de Dont let me downgtDirigindo my cargtMoa estranha appears na matagtAparece as Spice girls do sec 21 atrasgtCarro comea a pular</div>                 ')[0];
+                popup_8861c30c5e0943958767cd7c0375bb76.setContent(html_f02481df5528446eaa325de707654cbd);
+            
+
+            marker_2a131a2901e645e0ada7223777879d9d.bindPopup(popup_8861c30c5e0943958767cd7c0375bb76);
+
+            
+        
+        
+            
+            var heat_map_98c3f41983a645e99308aa54d93466af = L.heatLayer(
+                [[' Rec Bass de Hoje com meu brother rangel_rer ... No projeto Cantora Aline Paula  - httpst.coq5Vy0ujZv8', [-22.81403, -47.28999]], ['Tambm teve circuito de fortalecimento muscular... Viagem ativa..vittacenter sadetudo httpst.co0YF3qiR60y', [-23.56028647, -46.65602678]], ['Rolezinho de amanh depois da celula. Prikota PriAlcantara souescolhido atesermosum httpst.covLj65SeplI', [-23.5479767, -46.90597612]], ['ltimo dia da alta cpula atltica Esamc... Vai deixar saudades atleticaesamc esamcsantos httpst.coBuPqN4YYoX', [-23.98534989, -46.29875373]], ['Clula Aliana_Americana SP  Parque Novo Mundo httpst.cofppskyXEi3', [-22.77961646, -47.34928406]], ['Natal chegandovendadenatal ateliemaluserra cursodeceramica ateliedeceramica auladeceramica httpst.coSyAS1pNSt5', [-23.59222222, -46.66555556]], ['Segunda etapa do simulado pro DopeyChallenge concluda com sucesso. Seguindo as orientaes do httpst.co8zRzFlSapq', [-23.59581722, -46.68425919]], ['T de Alicia En era una vez...Yo soy la Mulan   Etec Prof. Aprgio Gonzaga httpst.coLyMqLJpk0r', [-23.5310099, -46.5388499]], ['Agora fao parte da populao que sempre escuta Nossa deixa eu ver seu culos Nossa seu grau  httpst.co0AMUbrApMu', [-23.62163095, -46.69958383]], ['Im at Titular_Bar in So Paulo SP w tanbarbato kassy_sp httpst.coNp6mGmvanL', [-23.56876606, -46.59267205]], ['Microagulhamento Fotobiomodulado Vamos que anoite est cheia micropunturismo micro led httpst.coMOBcEMfQMD', [-23.58757, -46.64163]], ['HH   Consulado de Moema in So Paulo SP httpst.coDkff55lMDs', [-23.60391541, -46.65952265]], ['Mulher tenta suicidio ao pular do porto. Fotos na paginas httpst.co0D6JfoH89s zero13 httpst.coTIcBkgTHfR', [-24.0183658, -46.47049069]], ['Just posted a photo  Bidulas Restaurante httpst.coDzknCYbtva', [-24.0978544, -46.62639879]], ['Quase morri hj dps da aula e agr to com dor d cabea com sono e com dor d estomago afee', [-22.9858592, -46.9931433]], ['Circular Barbell joia em ao cirrgico Dourada Septo...316LseptumpiercingMais um da httpst.coQpbqBVW87J', [-23.27161, -45.89497]], ['Im at AME Interlagos - Ambulatrio Mdico de Especialidades in So Paulo httpst.coLku9tEPNDj', [-23.70389583, -46.69176448]], ['vestido longo sexycookiefashion paulafernandes7 natal festa instafashion look fenda  httpst.coz1sJsBOnQA', [-23.941101, -46.304807]], ['Primeiro dia de aula da ltima matria da ps graduao   UNIBR - Faculdade de So Vicente in So Vicente SP httpst.co7un3UP232l', [-23.96346998, -46.39195919]], ['rvore de clula FestaDaColheita2016  Igreja da Cidade em So Jos dos Campos httpst.co47cEN6u6Tb', [-23.1840992, -45.8490982]], ['Im at Titular_Bar in So Paulo SP httpst.coNgrDZfotcG', [-23.56876606, -46.59267205]], ['Aberta a temporada para entrega de presentes at Titular_Bar in So Paulo SP w tanbarbato httpst.coKhqn8wX6gS', [-23.56876606, -46.59267205]], ['Ela  Sambinha nossoalegria xotristeza forachape   Consulado dos Amigos httpst.coButz5RnoAx', [-23.4946312, -46.6113899]], ['boladenevecantareira celulaoboladeneve  Zona Norte - So Paulo httpst.coNVwWgzqTUh', [-23.4583681, -46.61251442]], ['... Mas  que loucuras so particularidades intimidades grandes demais para serem dividas httpst.coorvJt63zyZ', [-23.58228394, -46.60990906]], ['Quem disse q eu  ia treinar Fechei a academia musculao tudodebom academia fitmom httpst.co72C2jIzEUp', [-22.71349515, -47.64762518]], ['Aula extra de Power Jump PowerJump SangueLaranja  Academia Evoluo in Mogi das Cruzes SP httpst.cozqzef59kri', [-23.55100345, -46.20656911]], ['Aula dessa semana... vdeo em breve  JazzFunk MDCB  So Paulo Brazil httpst.coyLY8mI1DVK', [-23.55, -46.6333]], ['vemmonstro paimonstro  saidajaulamonstro at SmartFitOficial in So Paulo SP httpst.coX5qyvfTgo0', [-23.58678823, -46.67939723]], ['Bora puxar ferro  bestshape musculao carolmaromba ferro  httpst.co30O3ulJ6Xl', [-23.472365, -46.607391]], ['Tudo pronto para a aula de 2 fase de Empresarial  Bem-vindos   Damsio Educacional httpst.cokJC8nDQ1rG', [-23.55509784, -46.63407208]], ['Se anteceda a curva...  Academia Muscular Fit in So Paulo SP httpst.coKicflySgTX', [-23.40487175, -46.74533454]], ['Video de Dont let me downgtDirigindo my cargtMoa estranha appears na matagtAparece as Spice girls do sec 21 atrasgtCarro comea a pular', [-23.9572442, -46.3783863]]],
+                {
+                    minOpacity: 0.5,
+                    maxZoom: 18,
+                    max: 1.0,
+                    radius: 25,
+                    blur: 15,
+                    gradient: null
+                    })
+                .addTo(map_8d124f98fba34d9abdec536954fd8049);
+        
+        
+        
+        </script>
+        
