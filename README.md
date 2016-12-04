@@ -50,7 +50,7 @@ $ pip install -r requeriment.txt
 
 - Após instalar vá para a pasta app/plot e execute o twistd para servir os arquivos estaticos:
 ```ruby
-$ twistd -n web -p 8000 --path .
+$ twistd -n web -p 9000 --path .
 ```
 
 
