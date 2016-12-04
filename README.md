@@ -3,7 +3,7 @@
 
 ##Arquitetura##
 
-![](arquitetura.png)
+![](https://github.com/prates/geo_twitter/blob/master/arquitetura.png)
 
 Descrição
 
