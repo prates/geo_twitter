@@ -1,7 +1,9 @@
 # geo_twitter
 #### Desenvovido por Alexandre Prates ####
 
+##Arquitetura##
 
+![](arquitetura.png)
 
 Descrição
 
