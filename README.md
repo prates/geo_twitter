@@ -1,11 +1,11 @@
 # geo_twitter
 #### Desenvovido por Alexandre Prates ####
 
-##Arquitetura##
+###Arquitetura###
 
 ![](https://cloud.githubusercontent.com/assets/482626/20864072/a890d086-b9c8-11e6-88bf-2725afb2f58b.png)
 
-Descrição
+###Descrição###
 
 Essa aplicação tem como função buscar os tweet armazemnados na base e plot um mapa com as notificações, agrupar essa informações em cluster e mostar as areas com maior incidencia com 
 heatmap. Esse projeto tem com dependencia o Redis, foi utilizado via docker, mas você pode instala-lo na máquina local.
@@ -24,10 +24,11 @@ $ docker run --name redis -d -p 6379:6379 redis
 
 A implementação e testes foram feito utilizando Ubuntu linux.
 
-Observação
+####Observação####
+
 O redis deve estar populado, logo a aplicação coletor deve estar rodando.
 
-##Procedimento de instalação:##
+###Procedimento de instalação:###
 
 - Crie um diretorio;
 - Utilize o virtualenv para criar um container python 2.7
@@ -63,7 +64,7 @@ $ python manage.py runserver 0.0.0.0:8001
 - Abra o navegador na url: http://127.0.0.1:8001/teste/
 
 
-##Instruções de configuração##
+###Instruções de configuração###
 Para configurar o comportamernto da aplicação edite o arquivo app/CONFIG.py
 
 
