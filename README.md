@@ -63,6 +63,16 @@ $ python manage.py runserver 0.0.0.0:8001
 
 - Abra o navegador na url: http://127.0.0.1:8001/teste/
 
+- Para efetuar busca na interface web use o caracter "*". Os caracteres "*" servem como curinga nas buscas. Exemplo:
+
+```ruby
+*STF*
+Retorna  todas as tweets que contenham a string "STF".
+```
+
+
+
+
 
 ###Instruções de configuração###
 Para configurar o comportamernto da aplicação edite o arquivo app/CONFIG.py
