@@ -1,5 +1,6 @@
 # geo_twitter
 #### Desenvovido por Alexandre Prates ####
+#### Esse projeto foi desenvolvido como parte do desafio para desenvolvedor Python da GetNinjas ####
 
 ###Arquitetura###
 
